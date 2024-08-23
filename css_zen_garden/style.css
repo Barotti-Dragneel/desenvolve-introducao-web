@@ -1,0 +1,120 @@
+/*
+Cor de fundo: #004F4E
+Cor da fonte: #ffffff
+Cor de destaque: #FFC745
+*/
+
+/* Paleta de cores da página*/
+html {
+    color: #ffffff;
+    background: #004F4E;
+    font-size: 18px;
+
+}
+
+.page-wrapper {
+    max-width: 1280px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.intro {
+    height: 550px;
+}
+
+.designe-archives {
+    display: none;
+}
+/* Define um tamanho fixo para a página inteira */
+body {
+    max-width: 1200px;
+    margin: 1%; /* Centraliza a página */
+
+    font-family: sans-serif; /* Tipo de fonte da página */
+}
+
+/* Identa os parágrafos */
+p {text-indent: 1em;} 
+
+h1, h2, h3 {text-align: center;} /* Centraliza os títulos no meio da página */
+
+/* Define o tamanho dos títulos */
+h1 {font-size: 1.8rem;}
+h2 {font-size: 1.4rem;}
+h3 {font-size: 1.2rem;}
+
+/* Alinha a seção de resumo à direita ou centraliza */
+.summary {text-align: center; }
+
+/* Espaçamento entre as linhas de 1.5 para os parágrafos da seção principal */
+.main p {line-height: 1.5;}
+
+/* Define as abreviaturas para que a fonte seja carregada em small-caps */
+abbr {font-variant: small-caps;}
+
+/*Cor dos links da página*/
+a {color: #FFC745;}
+a:hover {color: #e6a100}
+
+/* Inverte a cor do cabeçalho */
+header {
+    background-color: #00302f; /* fundo escuro */
+    color: #FFC745; /* fonte clara */
+    padding: 1em;
+}
+
+li {
+    text-align: center;
+    display: block;
+    border: solid 1px #FFC745;
+
+    margin-left: 30%;
+    margin-right: 30%;
+
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+/* Coloca título e subtítulo lado a lado e adiciona espaçamento */
+header h1, header h2 {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 1em;
+}
+
+/* Adiciona espaçamento lateral ao título principal */
+header h1 {
+    padding-left: 1em;
+}
+
+/* Remove os bullets dos itens do menu */
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Aumenta o espaçamento entre os itens do menu */
+.sidebar nav ul li {
+    margin-bottom: 2em;
+}
+
+/* Centraliza os itens do menu */
+.sidebar nav ul li a {
+    text-align: center;
+    display: block;
+}
+
+/* Adiciona 4% de espaçamento externo no rodapé */
+footer {
+    padding: 4%;
+    background-color: #00302f; /* fundo escuro */
+    color: #ffffff; /* fonte clara */
+}
+
+/* Transforma os links do rodapé em caixas com borda */
+footer a {
+    border: 2px solid #FFC745;
+    padding: 0.5em;
+    display: inline-block;
+    margin-right: 0.5em;
+}
