@@ -1,120 +1,181 @@
-/*
-Cor de fundo: #004F4E
-Cor da fonte: #ffffff
-Cor de destaque: #FFC745
-*/
+    /*
+    Cor de fundo: #004F4E
+    Cor da fonte: #ffffff
+    Cor de destaque: #FFC745
+    */
 
-/* Paleta de cores da página*/
-html {
-    color: #ffffff;
-    background: #004F4E;
-    font-size: 18px;
+    /* Paleta de cores da página*/
+    html {
+        color: #ffffff;
+        background: #004F4E;
+        font-size: 18px;
+    }
 
-}
+    .page-wrapper { 
+        max-width: 1280px;
+        width: 80%;
+        margin: 0 auto;
+    }
 
-.page-wrapper {
-    max-width: 1280px;
-    width: 80%;
-    margin: 0 auto;
-}
+    .intro {
+        height: 550px;
+    }
 
-.intro {
-    height: 550px;
-}
+    .designe-archives {
+        display: none;
+    }
 
-.designe-archives {
-    display: none;
-}
-/* Define um tamanho fixo para a página inteira */
-body {
-    max-width: 1200px;
-    margin: 1%; /* Centraliza a página */
+    /* Define um tamanho fixo para a página inteira */
+    body {
+        max-width: 1200px;
+        margin: 1%; /* Centraliza a página */
+        font-family: sans-serif; /* Tipo de fonte da página */
+    }
 
-    font-family: sans-serif; /* Tipo de fonte da página */
-}
+    /* Identa os parágrafos */
+    p {
+        text-indent: 1em; 
+    }
 
-/* Identa os parágrafos */
-p {text-indent: 1em;} 
+    h1, h2, h3 {
+        text-align: center; /* Centraliza os títulos no meio da página */
+    }
 
-h1, h2, h3 {text-align: center;} /* Centraliza os títulos no meio da página */
+    /* Define o tamanho dos títulos */
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.4rem; }
+    h3 { font-size: 1.2rem; }
 
-/* Define o tamanho dos títulos */
-h1 {font-size: 1.8rem;}
-h2 {font-size: 1.4rem;}
-h3 {font-size: 1.2rem;}
+    /* Alinha a seção de resumo à direita ou centraliza */
+    .summary {
+        text-align: center; 
+    }
 
-/* Alinha a seção de resumo à direita ou centraliza */
-.summary {text-align: center; }
+    /* Espaçamento entre as linhas de 1.5 para os parágrafos da seção principal */
+    .main p {
+        line-height: 1.5;
+    }
 
-/* Espaçamento entre as linhas de 1.5 para os parágrafos da seção principal */
-.main p {line-height: 1.5;}
+    /* Define as abreviaturas para que a fonte seja carregada em small-caps */
+    abbr {
+        font-variant: small-caps;
+    }
 
-/* Define as abreviaturas para que a fonte seja carregada em small-caps */
-abbr {font-variant: small-caps;}
+    /* Cor dos links da página */
+    a {
+        color: #FFC745;
+    }
+    a:hover {
+        color: #e6a100;
+    }
 
-/*Cor dos links da página*/
-a {color: #FFC745;}
-a:hover {color: #e6a100}
+    /* Inverte a cor do cabeçalho */
+    header {
+        background-color: #00302f; /* fundo escuro */
+        color: #FFC745; /* fonte clara */
+        padding: 1em;
+    }
 
-/* Inverte a cor do cabeçalho */
-header {
-    background-color: #00302f; /* fundo escuro */
-    color: #FFC745; /* fonte clara */
-    padding: 1em;
-}
+    /* Centraliza os itens da lista */
+    li {
+        text-align: center;
+        display: block;
+        border: solid 1px #FFC745;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
 
-li {
-    text-align: center;
-    display: block;
-    border: solid 1px #FFC745;
+    /* Coloca título e subtítulo lado a lado e adiciona espaçamento */
+    header h1, header h2 {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 1em;
+    }
 
-    margin-left: 30%;
-    margin-right: 30%;
+    /* Adiciona espaçamento lateral ao título principal */
+    header h1 {
+        padding-left: 1em;
+    }
 
-    padding-top: 1%;
-    padding-bottom: 1%;
-}
+    /* Remove os bullets dos itens do menu */
+    .sidebar nav ul {
+        list-style: none;
+        padding: 0;
+    }
 
-/* Coloca título e subtítulo lado a lado e adiciona espaçamento */
-header h1, header h2 {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 1em;
-}
+    /* Aumenta o espaçamento entre os itens do menu */
+    .sidebar nav ul li {
+        margin-bottom: 2em;
+    }
 
-/* Adiciona espaçamento lateral ao título principal */
-header h1 {
-    padding-left: 1em;
-}
+    /* Centraliza os itens do menu */
+    .sidebar nav ul li a {
+        text-align: center;
+        display: block;
+    }
 
-/* Remove os bullets dos itens do menu */
-.sidebar nav ul {
-    list-style: none;
-    padding: 0;
-}
+    /* Adiciona 4% de espaçamento externo no rodapé */
+    footer {
+        padding: 4%;
+        background-color: #00302f; /* fundo escuro */
+        color: #ffffff; /* fonte clara */
+        border-top: 1px solid #e6a100; /* linha no topo do footer */
+    }
 
-/* Aumenta o espaçamento entre os itens do menu */
-.sidebar nav ul li {
-    margin-bottom: 2em;
-}
+    /* Transforma os links do rodapé em caixas com borda */
+    footer a {
+        border: 2px solid #FFC745;
+        padding: 0.5em;
+        display: inline-block;
+        margin-right: 0.5em;
+    }
 
-/* Centraliza os itens do menu */
-.sidebar nav ul li a {
-    text-align: center;
-    display: block;
-}
+    /* Define botão com estilo */
+    .button {
+        background-color: #FFC745;
+        color: #004F4E;
+        border: none;
+        padding: 0.5em 1em;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    .button:hover {
+        background-color: #e6a100; /* tom mais escuro no hover */
+    }
 
-/* Adiciona 4% de espaçamento externo no rodapé */
-footer {
-    padding: 4%;
-    background-color: #00302f; /* fundo escuro */
-    color: #ffffff; /* fonte clara */
-}
+    .page-wrapper {
+        position: relative; 
+        /* Torna este elemento uma referência para posicionamento absoluto */
+    }
 
-/* Transforma os links do rodapé em caixas com borda */
-footer a {
-    border: 2px solid #FFC745;
-    padding: 0.5em;
-    display: inline-block;
-    margin-right: 0.5em;
-}
+    .explanation {
+        width: 60%; /* Define 60% da largura */
+        margin-right: 35%; /* Espaçamento de 35% à direita */
+        border-right: 1px solid #1f295c; /* Borda à direita com 1px de espessura */
+        padding-right: 2%; /* Espaçamento interno de 2% à direita */
+        box-sizing: border-box; /* Garante que padding e border sejam incluídos na largura */
+        padding: 2em; /* Adiciona padding para não ficar apertado */
+    }
+
+    .design-selection {
+        position: absolute;
+        top: 560px; /* Move o menu para começar após a introdução */
+        left: 62%; /* Posiciona o menu após o elemento .explanation */
+        padding: 0 2%; /* Adiciona espaçamento interno horizontal de 2% */
+        box-sizing: border-box; /* Garante que o padding não altere o layout */
+    }
+
+    /* Estilo para imagens responsivas */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Efeito hover nos links do menu */
+    .sidebar nav ul li a:hover {
+        background-color: rgba(255, 199, 69, 0.2); /* fundo leve no hover */
+        border-color: #e6a100; /* muda a cor da borda no hover */
+    }
