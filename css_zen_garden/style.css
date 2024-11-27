@@ -61,14 +61,6 @@
         font-variant: small-caps;
     }
 
-    /* Cor dos links da página */
-    a {
-        color: #FFC745;
-    }
-    a:hover {
-        color: #c78b00;
-    }
-
     /* Inverte a cor do cabeçalho */
     header {
         background-color: #00302f; /* fundo escuro */
@@ -79,12 +71,11 @@
     /* Centraliza os itens da lista */
     li {
         text-align: center;
-        display: block;
-        border: solid 1px #FFC745;
-        margin-left: 10%;
-        margin-right: 10%;
-        padding-top: 1%;
-        padding-bottom: 1%;
+        display: block   ;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
     }
 
     /* Coloca título e subtítulo lado a lado e adiciona espaçamento */
@@ -124,28 +115,6 @@
         border-top: 1px solid #e6a100; /* linha no topo do footer */
     }
 
-    /* Transforma os links do rodapé em caixas com borda  */
-    footer a {
-        border: 2px solid #FFC745;
-        padding: 0.5em;
-        display: inline-block;
-        margin-right: 0.5em;
-    }
-
-    /* Define botão com estilo */
-    .button {
-        background-color: #FFC745;
-        color: #004F4E;
-        border: none;
-        padding: 0.5em 1em;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
-    .button:hover {
-        background-color: #e6a100; /* tom mais escuro no hover */
-    }
-
     .page-wrapper {
         position: relative; 
         /* Torna este elemento uma referência para posicionamento absoluto */
@@ -162,22 +131,22 @@
 
     .design-selection {
         position: absolute;
-        top: 480px; /* Move o menu para começar após a introdução */
+        top: 450px; /* Move o menu para começar após a introdução */
         left: 62%; /* Posiciona o menu após o elemento .explanation */
-        padding: 0 2%; /* Adiciona espaçamento interno horizontal de 2% */
+        padding: 2%; /* Adiciona espaçamento interno horizontal de 2% */
+        padding-left: 12px;
+        padding-right: 12px;
         box-sizing: border-box; /* Garante que o padding não altere o layout */
+        width: 380px;
+    }
+    .design-selection li{
+        display: inline-flex;
     }
 
     /* Estilo para imagens responsivas */
     img {
         max-width: 100%;
         height: auto;
-    }
-
-    /* Efeito hover nos links do menu */
-    .sidebar nav ul li a:hover {
-        background-color: rgba(255, 199, 69, 0.2); /* fundo leve no hover */
-        border-color: #e6a100; /* muda a cor da borda no hover */
     }
 
     .supporting footer {
@@ -210,4 +179,27 @@
     }
     .participation h3 {
         align-self: center;
+    }
+
+    a { /* Cor dos links da página */
+        color: #FFC745;
+    }
+    a:hover {
+        color: #e6a100;
+    }
+
+    .main p:first-of-type::first-letter {
+        font-size: 3em;
+        font-family: 'Times New Roman', Times, serif;
+        float: left;
+    }
+
+    .design-selection li{
+        border-top: #e6a100 solid 1px;
+        padding-top: 8px;
+    }
+
+    .design-selection li:last-of-type {
+        border-bottom: #e6a100 solid 1px;
+        padding-bottom: 8px;
     }
